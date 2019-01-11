@@ -20,6 +20,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
 RUN gem install rails
+RUN gem install pg
 RUN gem install foreman
 
 WORKDIR /app
