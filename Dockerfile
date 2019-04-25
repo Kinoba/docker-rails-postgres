@@ -1,4 +1,4 @@
-FROM ruby:2.5.3-stretch
+FROM ruby:2.5.5-stretch
 
 # Fix debconf warnings upon build
 ARG DEBIAN_FRONTEND=noninteractive
