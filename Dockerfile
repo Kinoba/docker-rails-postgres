@@ -22,6 +22,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 RUN gem install rails \
                 pg \
                 foreman \
-                mailcatcher
+                mailcatcher \
+                bundler
 
 WORKDIR /app
